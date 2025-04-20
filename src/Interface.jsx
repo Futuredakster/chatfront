@@ -20,7 +20,7 @@ const Interface = () => {
       // Send the message to the backend using Axios
       const accessToken = localStorage.getItem("accessToken");
       const response = await axios.post(
-        'http://localhost:8080/api/chat',
+        'https://chatbot-t2dr.onrender.com/api/chat',
         { message: input },
         {
           headers: {

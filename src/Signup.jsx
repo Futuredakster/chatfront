@@ -16,7 +16,7 @@ const Signup = () => {
       },
     };
 
-    axios.post("http://localhost:8080/users", userData)
+    axios.post("https://chatbot-t2dr.onrender.com/users", userData)
       .then((response) => {
         console.log("Request successful:", response);
         navigate('/login');

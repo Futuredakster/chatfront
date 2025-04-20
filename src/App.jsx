@@ -18,7 +18,7 @@ function App() {
       // Handle the case where there is no access token (e.g., redirect to login page)
       setAuthState({...authState, status:false});
     } else{
-    axios.get("http://localhost:8080/users/auth", {
+    axios.get("https://chatbot-t2dr.onrender.com/users/auth", {
       headers: {
         accessToken: accessToken,
       },
